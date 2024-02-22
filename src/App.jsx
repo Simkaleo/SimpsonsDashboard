@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import PersistentDrawerLeft from "./components/Sidebar";
 import CostTotal from "./components/CostTotal";
+import PopularDrinks from "./components/TopDrinks";
+import Customers from "./components/TopCustomers";
 // import BasicGrid from "./components/Grid";
 import Box from "@mui/system/Box";
 import Grid from "@mui/system/Unstable_Grid";
@@ -29,10 +31,21 @@ function App() {
             </Item>
           </Grid>
           <Grid xs={8}>
+            <Item>
+              Top Drinks
+              {/* <PopularDrinks /> */}
+            </Item>
+          </Grid>
+          <Grid xs={8}>
+            <Item>xs=8</Item>
+          </Grid>
+          <Grid xs={8}>
             <Item>xs=8</Item>
           </Grid>
         </Grid>
       </Box>
+
+      <Customers />
     </>
   );
 }

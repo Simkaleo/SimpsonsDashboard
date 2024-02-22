@@ -5,6 +5,8 @@ export const mockTransactions = [
     date: "2021-09-01",
     cost: "73.95",
     drinkOrder: "Duff",
+    image:
+      "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
   },
   {
     txId: "0315dsaa",
@@ -12,6 +14,8 @@ export const mockTransactions = [
     date: "2022-04-01",
     cost: "133.45",
     drinkOrder: "Chardonnay",
+    image:
+      "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
   },
   {
     txId: "01e4dsa",
@@ -19,6 +23,8 @@ export const mockTransactions = [
     date: "2021-09-01",
     cost: "43.95",
     drinkOrder: "White Claw",
+    image:
+      "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
   },
   {
     txId: "51034szv",
