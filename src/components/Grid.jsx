@@ -12,29 +12,29 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-// export default function BasicGrid() {
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <Grid container spacing={2}>
-//         <Grid item xs={3}>
-//           <Item>Sales Obtained</Item>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Item>New Clients</Item>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Item>Traffic Received</Item>
-//         </Grid>
-//         <Grid item xs={5}>
-//           <Item>Revenue Generated</Item>
-//         </Grid>
-//         <Grid item xs={3}>
-//           <Item>Recent Transactions</Item>
-//         </Grid>
-//       </Grid>
-//     </Box>
-//   );
-// }
+export default function BasicGrid() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={3}>
+          <Item>Sales Obtained</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>New Clients</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>Traffic Received</Item>
+        </Grid>
+        <Grid item xs={5}>
+          <Item>Revenue Generated</Item>
+        </Grid>
+        <Grid item xs={3}>
+          <Item>Recent Transactions</Item>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}
 
 // import * as React from "react";
 // import { styled } from "@mui/material/styles";

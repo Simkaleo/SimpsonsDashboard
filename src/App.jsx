@@ -1,32 +1,38 @@
+import React from "react";
 import "./App.css";
-// import FullWidthGrid from "./components/Grid";
-import ResponsiveDrawer from "./components/Sidebar";
-import "./style.css";
+import PersistentDrawerLeft from "./components/Sidebar";
+import CostTotal from "./components/CostTotal";
+// import BasicGrid from "./components/Grid";
+import Box from "@mui/system/Box";
+import Grid from "@mui/system/Unstable_Grid";
+import styled from "@mui/system/styled";
+
+const Item = styled("div")(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#FFC0CB",
+  border: "1px solid",
+  borderColor: theme.palette.mode === "dark" ? "#444d58" : "#ced7e0",
+  padding: theme.spacing(1),
+  borderRadius: "4px",
+  textAlign: "center",
+}));
 
 function App() {
   return (
     <>
-      <ResponsiveDrawer />
-      <h1>Dashboard</h1>
-
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-          {/* <Heading /> */}
+      <h1>Test</h1>
+      <PersistentDrawerLeft />
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2} columns={16}>
+          <Grid xs={8}>
+            <Item>
+              Total Sales <CostTotal />
+            </Item>
+          </Grid>
+          <Grid xs={8}>
+            <Item>xs=8</Item>
+          </Grid>
         </Grid>
-        <Grid item xs={1}>
-          <Item>New Clients</Item>
-        </Grid>
-        <Grid item xs={11}>
-          <Item>Traffic Received</Item>
-        </Grid>
-        <Grid item xs={5}>
-          <h2>Transactions</h2>
-          <Item>Revenue Generated</Item>
-        </Grid>
-        <Grid item xs={3}>
-          <Item>Recent Transactions</Item>
-        </Grid>
-      </Grid>
+      </Box>
     </>
   );
 }
