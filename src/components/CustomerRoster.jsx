@@ -37,9 +37,8 @@ export default function Customers() {
               <TableCell>User</TableCell>
               <TableCell>Date</TableCell>
               <TableCell>Cost (USD)</TableCell>
-              <TableCell>Drink Order</TableCell>
+              <TableCell>Bar Tab</TableCell>
               <TableCell>Image</TableCell>
-              <TableCell>Details</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -47,9 +46,6 @@ export default function Customers() {
               <TableRow key={transaction.txId}>
                 <TableCell>{transaction.txId}</TableCell>
                 <TableCell>{transaction.user}</TableCell>
-                <TableCell>{transaction.date}</TableCell>
-                <TableCell>{transaction.cost}</TableCell>
-                <TableCell>{transaction.drinkOrder}</TableCell>
                 <TableCell>
                   <img
                     src={transaction.image}
@@ -57,16 +53,11 @@ export default function Customers() {
                     style={{ maxWidth: "50px", maxHeight: "50px" }}
                   />
                 </TableCell>
-                <TableCell>
-                  <Button
-                  // variant="contained"
-                  // size="small"
-                  // href={`https://dummyjson.com/products/${transaction.txId}`}
-                  // target="_blank"
-                  >
-                    View Details
-                  </Button>
-                </TableCell>
+                <TableCell>{transaction.date}</TableCell>
+                <TableCell>{transaction.cost}</TableCell>
+                <TableCell>{transaction.drinkOrder}</TableCell>
+
+                <TableCell></TableCell>
               </TableRow>
             ))}
           </TableBody>

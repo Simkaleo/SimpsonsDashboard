@@ -20,6 +20,9 @@ import LocalPizzaIcon from "@mui/icons-material/LocalPizza";
 import MailIcon from "@mui/icons-material/Mail";
 import SportsBarIcon from "@mui/icons-material/SportsBar";
 import Link from "@mui/material/Link"; // Add this import
+import Customers from "./CustomerRoster";
+import PopularDrinks from "./TopDrinks";
+import ContentSection from "./NewGrid";
 
 const drawerWidth = 240;
 
@@ -114,6 +117,7 @@ export default function PersistentDrawerLeft() {
       >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
+            {" "}
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (
@@ -151,6 +155,11 @@ export default function PersistentDrawerLeft() {
       <Main open={open}>
         <DrawerHeader />
         <Typography>
+          <h1>test number one </h1>
+          {/* <div>
+            // <ContentSection />
+          </div> */}
+
           <Link href="https://frinkiac.com/img/S03E11/1109416.jpg">
             <img
               src="https://frinkiac.com/img/S03E11/1109416.jpg"
@@ -162,7 +171,18 @@ export default function PersistentDrawerLeft() {
             We're going in. - Mr. Burns
           </Typography>
         </Typography>
-        <Typography paragraph>Consequat mauris</Typography>
+
+        {/* This is the top third of the fold */}
+
+        {/* <Typography paragraph>Consequat mauris</Typography> 
+        
+        
+        
+        { */}
+
+        {/* <PopularDrinks /> */}
+        <h2> Test number two</h2>
+        <Customers />
       </Main>
     </Box>
   );

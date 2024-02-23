@@ -9,13 +9,13 @@ export const mockTransactions = [
       "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
   },
   {
-    txId: "01e4dsa",
+    txId: "01e4daa",
     user: "marge_simpson",
     date: "2021-09-01",
     cost: "43.95",
-    drinkOrder: "White Claw",
+    drinkOrder: "Long Island Iced Tea",
     image:
-      "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
+      "https://i.pinimg.com/originals/80/b3/34/80b33485a1efc6e1dae6aa80ea283af3.png",
   },
   {
     txId: "51034szv",
@@ -31,16 +31,16 @@ export const mockTransactions = [
     user: "lenny_leonard",
     date: "2022-11-02",
     cost: "13.55",
-    drinkOrder: "Chardonnay",
+    drinkOrder: "Merlot",
     image:
       "https://static.wikia.nocookie.net/p__/images/a/ae/Lenny_Leonard.png/revision/latest/thumbnail/width/360/height/360?cb=20120614215512&path-prefix=protagonist",
   },
   {
     txId: "01e4dsa",
-    user: "grandma_simpson",
+    user: "mona_simpson",
     date: "2021-09-01",
     cost: "43.95",
-    drinkOrder: "White Claw",
+    drinkOrder: "Sangria",
     image:
       "https://static.wikia.nocookie.net/characters/images/4/49/Mona_Simpson_.png/revision/latest?cb=20191206211349",
   },
@@ -67,7 +67,7 @@ export const mockTransactions = [
     user: "maggie_simpson",
     date: "2024-02-03",
     cost: "75.40",
-    drinkOrder: "Chardonnay",
+    drinkOrder: "Southern Comfort",
     image:
       "https://i.pinimg.com/736x/97/aa/90/97aa902489ec29c94be6b7e1ba550744.jpg",
   },
@@ -76,7 +76,7 @@ export const mockTransactions = [
     user: "krusty_the_clown",
     date: "2024-01-12",
     cost: "30.25",
-    drinkOrder: "White Claw",
+    drinkOrder: "Scotch",
     image:
       "https://static.wikia.nocookie.net/simpsonstappedout/images/f/f8/Krusty_Icon.png/revision/latest/thumbnail/width/360/height/360?cb=20211029205644",
   },
@@ -85,7 +85,7 @@ export const mockTransactions = [
     user: "selma_bouvier",
     date: "2024-02-10",
     cost: "48.60",
-    drinkOrder: "Sangria",
+    drinkOrder: "Coors Lite",
     image:
       "https://static.wikia.nocookie.net/simpsonsfanon/images/b/ba/Selma_Bouvier.png/revision/latest?cb=20230909040017",
   },
@@ -99,19 +99,13 @@ export const mockTransactions = [
       "https://lezwatchtv.com/wp-content/uploads/2016/07/Patty_Bouvier.png",
   },
   {
-    txId: "3w91a8z",
-    user: "marge_simpson",
-    date: "2024-02-08",
-    cost: "64.90",
-    drinkOrder: "White Claw",
-    image: "",
-  },
-  {
     txId: "7q49r3y",
     user: "montgomery_burns",
     date: "2024-01-30",
     cost: "110.20",
-    drinkOrder: "Duff",
+    drinkOrder: "Brandy",
+    image:
+      "https://www.giantbomb.com/a/uploads/scale_small/0/4024/570741-mrburns.gif",
   },
   {
     txId: "1v56c4z",
@@ -119,28 +113,34 @@ export const mockTransactions = [
     date: "2024-02-01",
     cost: "42.35",
     drinkOrder: "Duff",
+    image:
+      "https://assets.mycast.io/actor_images/actor-herbert-powell-206840_small.jpg?1619569193",
   },
   {
     txId: "5u82z3v",
     user: "grandpa_simpson",
     date: "2024-01-08",
     cost: "95.15",
-    drinkOrder: "White Claw",
+    drinkOrder: "Budweiser",
+    image:
+      "https://www.giantbomb.com/a/uploads/scale_medium/0/6507/369043-abe_simpson.gif",
   },
   {
     txId: "2a38z9p",
-    user: "maggie_simpson",
+    user: "waylon_smithers",
     date: "2024-02-03",
     cost: "75.40",
     drinkOrder: "Sangria",
+    image:
+      "https://i.pinimg.com/originals/06/da/f6/06daf6db512b148d02d3889c2561f73f.gif",
   },
   {
     txId: "0315dsaa",
-    user: "moe_szyslak",
+    user: "barney_gumble",
     date: "2022-04-01",
     cost: "133.45",
     drinkOrder: "Chardonnay",
     image:
-      "https://i.discogs.com/J4bH_-A4UcQHFSUBDyyqXbTzr7XWM8S0NfNoYgwXAiI/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE0MDAz/MTctMTMzNTcxNzQ3/Ni5wbmc.jpeg",
+      "https://www.gyfted.me/_next/image?url=%2Fimg%2Fcharacters%2Fbarney-gumble.png&w=640&q=75",
   },
 ];

@@ -1,9 +1,23 @@
+// import React from "react";
+// import "./App.css";
+// import PersistentDrawerLeft from "./components/Sidebar";
+
+// function App() {
+//   return (
+//     <>
+//       <PersistentDrawerLeft />
+//     </>
+//   );
+// }
+
+// export default App;
+
 import React from "react";
 import "./App.css";
 import PersistentDrawerLeft from "./components/Sidebar";
 import CostTotal from "./components/CostTotal";
 import PopularDrinks from "./components/TopDrinks";
-import Customers from "./components/TopCustomers";
+import Customers from "./components/CustomerRoster";
 // import BasicGrid from "./components/Grid";
 import Box from "@mui/system/Box";
 import Grid from "@mui/system/Unstable_Grid";
@@ -21,18 +35,18 @@ const Item = styled("div")(({ theme }) => ({
 function App() {
   return (
     <>
-      <h1>Test</h1>
+      ]
       <PersistentDrawerLeft />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2} columns={16}>
           <Grid xs={8}>
             <Item>
-              Total Sales <CostTotal />
+              Total Monthly Sales <CostTotal />
             </Item>
           </Grid>
           <Grid xs={8}>
             <Item>
-              Top Drinks
+              Top Ordered Drinks
               {/* <PopularDrinks /> */}
             </Item>
           </Grid>
@@ -44,8 +58,6 @@ function App() {
           </Grid>
         </Grid>
       </Box>
-
-      <Customers />
     </>
   );
 }
