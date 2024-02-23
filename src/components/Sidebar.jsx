@@ -97,9 +97,7 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Moe's Tavern
-          </Typography>
+          <Typography variant="h6" noWrap component="div"></Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -125,6 +123,7 @@ export default function PersistentDrawerLeft() {
             )}
           </IconButton>
         </DrawerHeader>
+        <h1>Moe's Tavern</h1>
         <Divider />
         <List>
           {["Dashboard", "Inbox", "Send email"].map((text, index) => (

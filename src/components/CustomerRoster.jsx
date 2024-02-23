@@ -35,10 +35,10 @@ export default function Customers() {
             <TableRow>
               <TableCell>ID</TableCell>
               <TableCell>User</TableCell>
-              <TableCell>Date</TableCell>
-              <TableCell>Cost (USD)</TableCell>
-              <TableCell>Bar Tab</TableCell>
               <TableCell>Image</TableCell>
+              <TableCell>Date</TableCell>
+              <TableCell>Bar Tab</TableCell>
+              <TableCell>Most Ordered Drink</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

@@ -1,24 +1,33 @@
-import { react } from "react";
+import React from "react";
 import { mockTransactions } from "../mockData";
 
-const PopularDrinks = ({ transactions }) => {
-  const topThreeDrinks = Object.entries(
-    transactions.reduce((count, { drinkOrder }) => {
-      if (drinkOrder) count[drinkOrder] = (count[drinkOrder] || 0) + 1;
-      return count;
-    }, {})
-  )
+// Standalone JavaScript function
+function calculateTopDrinks(transactions) {
+  const categoryCounts = transactions.reduce((count, { drinkOrder }) => {
+    if (drinkOrder) count[drinkOrder] = (count[drinkOrder] || 0) + 1;
+    return count;
+  }, {});
+
+  const sortedCategories = Object.entries(categoryCounts)
     .sort(([, countA], [, countB]) => countB - countA)
-    .slice(0, 3)
-    .map(([drink]) => drink);
+    .map(([category]) => category);
+
+  return sortedCategories.slice(0, 3); // Note that this will help return the top 3 drink categories
+}
+
+function TopDrinks() {
+  const topDrinks = calculateTopDrinks(mockTransactions);
 
   return (
     <div>
-      {topThreeDrinks.map((drink, index) => (
-        <li key={index}>{drink}</li>
-      ))}
+      <h2>Top Drinks</h2>
+      <ul>
+        {topDrinks.map((drink, index) => (
+          <li key={index}>{drink}</li>
+        ))}
+      </ul>
     </div>
   );
-};
+}
 
-export default PopularDrinks;
+export default TopDrinks;

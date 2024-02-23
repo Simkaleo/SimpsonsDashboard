@@ -22,6 +22,7 @@ import Customers from "./components/CustomerRoster";
 import Box from "@mui/system/Box";
 import Grid from "@mui/system/Unstable_Grid";
 import styled from "@mui/system/styled";
+import TopDrinks from "./components/TopDrinks";
 
 const Item = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#FFC0CB",
@@ -35,7 +36,6 @@ const Item = styled("div")(({ theme }) => ({
 function App() {
   return (
     <>
-      ]
       <PersistentDrawerLeft />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2} columns={16}>
@@ -46,8 +46,7 @@ function App() {
           </Grid>
           <Grid xs={8}>
             <Item>
-              Top Ordered Drinks
-              {/* <PopularDrinks /> */}
+              Top Drinks <TopDrinks />{" "}
             </Item>
           </Grid>
           <Grid xs={8}>
